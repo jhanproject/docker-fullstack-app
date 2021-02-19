@@ -18,6 +18,6 @@ after_success:
 
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
 
- - docker push hartorange/docker-frontend
- - docker push hartorange/docker-backend
- - docker push hartorange/docker-nginx
+  - docker push hartorange/docker-frontend
+  - docker push hartorange/docker-backend
+  - docker push hartorange/docker-nginx
